@@ -1,0 +1,61 @@
+// 变量
+@bg-color: #b7d4a8;
+
+
+button {
+    width: 100px;
+    height: 40px;
+}
+.main {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 360px;
+    height: 420px;
+    margin: 100px auto;
+    border: 10px solid #000;
+    border-radius: 20px;
+    background-color: @bg-color;
+    // 舞台
+    .stage {
+        position: relative;
+        width: 304px;
+        height: 304px;
+        border: 2px solid #000;
+        // 蛇
+        #snake {
+            &>div {
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                border: 1px solid @bg-color;
+                background-color: #000;
+            }
+        }
+        // 食物
+        #food {
+            position: absolute;
+            left: 40px;
+            top: 100px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-content: space-between;
+            width: 10px;
+            height: 10px;
+            &>div {
+                width: 4px;
+                height: 4px;
+                border-radius: 50%;
+                background-color: #000;
+            }
+        }
+    }
+    // 积分
+    .score-panel {
+        width: 300px;
+        display: flex;
+        justify-content: space-between;
+    }
+}

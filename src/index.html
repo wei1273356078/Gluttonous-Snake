@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+    <button id="startBtn">开始游戏</button>
+    <button id="resetBtn">重置</button>
+    <div class="main">
+        <!-- 舞台 -->
+        <div class="stage">
+            <!-- 蛇 -->
+            <div id="snake">
+                <!-- 蛇的身体 -->
+                <div></div>
+            </div>
+            <!-- 食物 -->
+            <div id="food">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <!-- 积分 -->
+        <div class="score-panel">
+            <div>
+                SCORE：<span id="score">0</span>
+            </div>
+            <div>
+                LEVEL：<span id="level">1</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
