@@ -7,6 +7,7 @@ module.exports = {
     entry: path.resolve(__dirname, '../src/index.ts'),
     output: {
         filename: 'index.js',
+        publicPath: './',
         path: path.resolve(__dirname, '../dist'),
         // 配置环境，兼容旧版浏览器
         environment: {
